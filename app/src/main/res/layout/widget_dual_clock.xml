@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/widget_background"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/city_left"
+            style="@style/WidgetCityLabel"
+            android:text="Melbourne" />
+        <TextClock
+            android:id="@+id/clock_left"
+            style="@style/WidgetTime"
+            android:timeZone="Australia/Melbourne" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#34506D" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/city_right"
+            style="@style/WidgetCityLabel"
+            android:text="Tehran" />
+        <TextClock
+            android:id="@+id/clock_right"
+            style="@style/WidgetTime"
+            android:timeZone="Asia/Tehran" />
+    </LinearLayout>
+</LinearLayout>

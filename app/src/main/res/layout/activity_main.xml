@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#091323">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DUAL CITY CLOCK"
+            android:textColor="#A7BDDA"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Big clocks, your way."
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/preview_container"
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/widget_background"
+            android:padding="12dp">
+            <LinearLayout
+                android:id="@+id/preview_panel_left"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/preview_city_left"
+                    style="@style/PreviewCity"
+                    android:text="Melbourne" />
+                <TextClock
+                    android:id="@+id/preview_clock_left"
+                    style="@style/PreviewClock"
+                    android:timeZone="Australia/Melbourne" />
+            </LinearLayout>
+            <View
+                android:id="@+id/preview_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#34506D" />
+            <LinearLayout
+                android:id="@+id/preview_panel_right"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/preview_city_right"
+                    style="@style/PreviewCity"
+                    android:text="Tehran" />
+                <TextClock
+                    android:id="@+id/preview_clock_right"
+                    style="@style/PreviewClock"
+                    android:timeZone="Asia/Tehran" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="FIRST CITY"
+            android:textColor="#A7BDDA"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/first_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:backgroundTint="#DDE7F7" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="SECOND CITY"
+            android:textColor="#A7BDDA"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/second_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:backgroundTint="#DDE7F7" />
+        <Button
+            android:id="@+id/swap_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Swap cities"
+            android:textAllCaps="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="WIDGET LAYOUT"
+            android:textColor="#A7BDDA"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/layout_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:backgroundTint="#DDE7F7" />
+        <TextView
+            android:id="@+id/font_size_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Clock size: 76 sp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/font_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The clock automatically fits inside the widget. Resize it on your home screen to display larger numbers."
+            android:textColor="#A7BDDA"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#6DAAFF"
+            android:text="Save &amp; update widget"
+            android:textColor="#061426"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add it: long-press the Home screen → Widgets → Dual City Clock. Tap the widget to change these settings."
+            android:textColor="#DDE7F7"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>

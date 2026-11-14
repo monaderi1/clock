@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorAccent">#6DAAFF</item>
+    </style>
+    <style name="WidgetCityLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">#AFC0D7</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="WidgetTime">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">66sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:format12Hour">HH:mm</item>
+        <item name="android:format24Hour">HH:mm</item>
+    </style>
+    <style name="PreviewCity" parent="WidgetCityLabel" />
+    <style name="PreviewClock" parent="WidgetTime" />
+</resources>
